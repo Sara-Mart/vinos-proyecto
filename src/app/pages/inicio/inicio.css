@@ -1,0 +1,18 @@
+.page{
+    background-image: url('/img/botellas.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+}
+
+.page h1{
+    font-size: 15rem;
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.page p{
+    font-size:3rem;
+    color: var(--color-secundary);
+}
