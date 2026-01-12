@@ -1,0 +1,28 @@
+#menuNav{
+    display: flex;
+    min-width: min(1200px,90vw);
+    align-items: center;
+    padding: 0.8rem 2rem;
+    gap: 5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    color: var(--color-secundary);
+}
+
+#menuNav h3{
+    font-size: 3rem;
+}
+
+nav{
+    display: flex;
+    gap: 5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--color-secundary);
+
+    
+}
+nav a.active {
+  font-weight: 900;
+}
