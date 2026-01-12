@@ -1,0 +1,28 @@
+#footer{
+    background-color: var(--color-secundary);
+    color: var(--color-background);
+    text-align: center;
+    padding: 30px;
+}
+
+hr{
+    
+    color: var(--color-background);
+    
+}
+
+#footer h1{
+    font-size: 4rem;
+}
+
+#footer div{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#footer p{
+    margin-top: 20px;
+}
