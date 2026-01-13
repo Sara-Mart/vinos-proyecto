@@ -1,0 +1,31 @@
+#sobreNosotros{
+    height: 100vh;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+
+    
+}
+
+#contenido h1{
+    color: var(--color-primary);
+    font-family: 'FuenteBody';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: clamp(2rem, 7vw, 8rem);
+    margin-bottom: 1rem;
+}
+
+
+#contenido p{
+    color: var(--color-primary);
+    font-size: clamp(1rem, 1.5vw, 7rem);
+    margin-bottom: 1rem;
+}
+
+#contenido .cita{
+    color: var(--color-secundary);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: clamp(2rem, 2.5vw, 4rem);
+}
