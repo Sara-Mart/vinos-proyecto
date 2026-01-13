@@ -3,6 +3,7 @@
     color: var(--color-background);
     text-align: center;
     padding: 30px;
+    width: 100vw;
 }
 
 hr{

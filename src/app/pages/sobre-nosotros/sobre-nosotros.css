@@ -1,11 +1,15 @@
 #sobreNosotros{
     height: 100vh;
     display: flex;
-    width: 90%;
+    width: 90vw;
     margin: 0 auto;
 
     
 }
+#sobreNosotros img{
+    width: 90vw;
+}
+
 
 #contenido h1{
     color: var(--color-primary);
@@ -15,6 +19,7 @@
     font-size: clamp(2rem, 7vw, 8rem);
     margin-bottom: 1rem;
 }
+
 
 
 #contenido p{
