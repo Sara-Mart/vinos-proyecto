@@ -5,7 +5,7 @@
         <div id="contenedorProductos">
 
             @for (vino of vinos; track vino.id){
-                <div class="cardVinos">
+                <div class="cardVinos" (click)="verDetalle(vino.id)" >
 
                     <h4>{{vino.nombre}}</h4>
                     <p>{{vino.descripcion}}</p>

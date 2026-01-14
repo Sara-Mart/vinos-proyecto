@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 export interface Vino{
   id: number;
@@ -81,4 +82,10 @@ export class Vinos {
     return this.vinos;
   }
   
+  constructor(private router: Router) {}
+
+  verDetalle(id: number) {
+    this.router.navigate(['/productos', id]);
+  }
+
 }
