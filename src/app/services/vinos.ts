@@ -84,8 +84,9 @@ export class Vinos {
   
   constructor(private router: Router) {}
 
-  verDetalle(id: number) {
+  verDetalleId(id: number) {
     this.router.navigate(['/productos', id]);
   }
+
 
 }
