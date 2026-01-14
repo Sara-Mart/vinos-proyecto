@@ -1,15 +1,22 @@
-<div class="page">
+<div class="Productos">
 
-    <div id="Productos">
+    
 
-        <div class="Producto">
+        <div id="contenedorProductos">
 
-            <h4>Titulo</h4>
-            <p>descripcion</p>
+            @for (vino of vinos; track vino.id){
+                <div class="cardVinos">
+
+                    <h4>{{vino.nombre}}</h4>
+                    <p>{{vino.descripcion}}</p>
+                    <img [src]="vino.img" [alt]="vino.nombre">
+                </div>
+            }
+
 
         </div>
 
-    </div>
+
 
 </div>
 

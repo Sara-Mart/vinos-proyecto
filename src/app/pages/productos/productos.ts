@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Vino } from '../../services/vinos';
+import { Vinos } from '../../services/vinos';
 
 @Component({
   selector: 'app-productos',
@@ -6,6 +8,13 @@ import { Component } from '@angular/core';
   templateUrl: './productos.html',
   styleUrl: './productos.css',
 })
-export class Productos {
+export class ProductosComponent {
+
+  vinos : Vino[] = [];
+
+  constructor (private vino:Vinos){
+    this.vinos= this.vino.getVinos();
+  }
+
 
 }
