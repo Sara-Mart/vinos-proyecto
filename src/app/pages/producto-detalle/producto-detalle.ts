@@ -12,4 +12,15 @@ import { Vinos } from '../../services/vinos';
 export class ProductoDetalle {
   private route = inject(ActivatedRoute);
   id = this.route.snapshot.paramMap.get('id');
+
+  private productoService = inject(Vinos);
+  producto:any;
+  constructor() {
+
+    // Obtenemos el id de la URL
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+
+    // Buscamos el producto en el service
+    this.producto = this.productoService.getProductoById(id);
+  }
 }

@@ -1,4 +1,28 @@
-<h2>Detalle del producto</h2>
+<div id="detalleProducto">
 
-<p>ID del producto: {{id}}</p>
+    <div id="imagenProducto">
+        <img
+            [src]="producto.img"
+            [alt]="producto.nombre">
+    </div>
 
+
+    <div id="contenidoProducto">
+
+        <p class="categoria">SARMIA</p>
+
+        <h1>{{ producto.nombre }}</h1>
+
+        <hr>
+
+        <p class="descripcion">
+            {{ producto.descripcion }}
+        </p>
+
+        <button routerLink="/productos">
+            ← Volver a productos
+        </button>
+
+    </div>
+
+</div>
