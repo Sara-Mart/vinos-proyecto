@@ -7,7 +7,7 @@
 }
 
 .page h1{
-    font-size: 15rem;
+    font-size: clamp(6rem, 19vw, 20rem);
     text-align: center;
     color: var(--color-primary);
 }
