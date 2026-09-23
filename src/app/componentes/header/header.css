@@ -1,30 +1,107 @@
-#menuNav{
+/* ==============================
+   MENÚ PRINCIPAL
+   ============================== */
+
+#menuNav {
     display: flex;
-    width: 100vw;
+    width: 100%;
     align-items: center;
+
     padding: 0.8rem 2rem;
     gap: 5rem;
+
+    box-sizing: border-box;
+
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
     color: var(--color-secundary);
 }
 
-#menuNav h3{
+
+/* ==============================
+   LOGO
+   ============================== */
+
+#menuNav h3 {
+    margin: 0;
     font-size: 3rem;
 }
 
-nav{
+
+/* ==============================
+   NAVEGACIÓN
+   ============================== */
+
+#menuNav nav {
     display: flex;
+    align-items: center;
     gap: 5rem;
 }
 
-nav a{
+#menuNav nav a {
     text-decoration: none;
     color: var(--color-secundary);
 
-    
-}
-nav a.active {
-  font-weight: 900;
+    white-space: nowrap;
 }
 
 
+/* Enlace de la página actual */
+
+#menuNav nav a.active {
+    font-weight: 900;
+}
+
+
+/* ==============================
+   TABLET
+   ============================== */
+
+@media (max-width: 900px) {
+
+    #menuNav {
+        gap: 3rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    #menuNav h3 {
+        font-size: 2.3rem;
+    }
+
+    #menuNav nav {
+        gap: 2.5rem;
+    }
+}
+
+
+/* ==============================
+   MÓVIL
+   ============================== */
+
+@media (max-width: 600px) {
+
+    #menuNav {
+        flex-direction: column;
+
+        gap: 1rem;
+
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #menuNav h3 {
+        font-size: 2rem;
+    }
+
+    #menuNav nav {
+        width: 100%;
+
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    #menuNav nav a {
+        width: 100%;
+        padding: 0.4rem 0;
+    }
+}
