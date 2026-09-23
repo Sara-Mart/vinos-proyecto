@@ -1,59 +1,115 @@
-# VinosProyecto
+# 🍷 SARMIA
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+Aplicación web desarrollada con **Angular** para la presentación de la marca de vinos **SARMIA** y su catálogo de productos.
 
-## Development server
+El proyecto ha sido desarrollado como práctica de desarrollo frontend, aplicando conceptos de **Angular, TypeScript, componentes, servicios, routing y diseño responsive**.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## 📖 Sobre el proyecto
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+SARMIA es una aplicación web enfocada en la presentación de una marca de vinos y sus diferentes productos.
 
-## Code scaffolding
+La aplicación combina una interfaz visual y minimalista con una estructura basada en componentes de Angular.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+El objetivo principal del proyecto es desarrollar una aplicación organizada, reutilizable y responsive, aplicando buenas prácticas de desarrollo frontend.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ✨ Características
 
-```bash
-ng generate --help
-```
+La aplicación cuenta con las siguientes funcionalidades:
 
-## Building
+- 🏠 Página de inicio
+- 🌿 Sección "Sobre nosotros"
+- 🍷 Catálogo de productos
+- 🔎 Página de detalle de cada producto
+- 🧭 Navegación mediante Angular Router
+- 📦 Gestión de productos mediante un Service
+- 🔗 Rutas dinámicas para los productos
+- 🖼️ Imágenes asociadas a cada producto
+- 📱 Diseño responsive
+- 💻 Adaptación para escritorio, tablet y móvil
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 🛠️ Tecnologías utilizadas
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### Frontend
 
-## Running unit tests
+- Angular
+- TypeScript
+- HTML5
+- CSS3
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Angular
 
-```bash
-ng test
-```
+- Componentes Standalone
+- Angular Router
+- Services
+- Dependency Injection
+- Interpolación
+- Property Binding
+- Event Binding
+- Parámetros de ruta
 
-## Running end-to-end tests
+### CSS
 
-For end-to-end (e2e) testing, run:
+- Flexbox
+- Media Queries
+- CSS Variables
+- `clamp()`
+- Unidades relativas
+- Diseño responsive
 
-```bash
-ng e2e
-```
+---
+## 🚀 Cómo arrancar el proyecto
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+### 📋 Requisitos previos
 
-## Additional Resources
+Antes de ejecutar el proyecto, necesitas tener instalado:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Node.js](https://nodejs.org/)
+- npm
+- Angular CLI
+- Git
+
+## 📂 Estructura del proyecto
+
+Una estructura aproximada del proyecto es:
+
+```text
+SARMIA/
+│
+├── public/
+│   └── img/
+│       ├── 1.png
+│       ├── 2.png
+│       └── ...
+│
+├── src/
+│   │
+│   ├── app/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── menu/
+│   │   │   ├── footer/
+│   │   │   ├── inicio/
+│   │   │   ├── sobre-nosotros/
+│   │   │   ├── productos/
+│   │   │   └── detalle-producto/
+│   │   │
+│   │   ├── services/
+│   │   │   └── producto.service.ts
+│   │   │
+│   │   ├── app.component.ts
+│   │   ├── app.component.html
+│   │   └── app.routes.ts
+│   │
+│   ├── styles.css
+│   └── main.ts
+│
+├── angular.json
+├── package.json
+├── tsconfig.json
+└── README.md
