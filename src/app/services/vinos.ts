@@ -88,5 +88,9 @@ export class Vinos {
     this.router.navigate(['/productos', id]);
   }
 
+  getProductoById(id: number) {
+    return this.vinos.find(producto => producto.id === id);
+}
+
 
 }
